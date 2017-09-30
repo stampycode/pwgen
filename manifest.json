@@ -1,0 +1,20 @@
+{
+  "short_name": "PwGen",
+  "name": "PwGen",
+  "icons": [
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#ffaa00",
+  "theme-color": "#ffaa00",
+  "display": "standalone"
+}

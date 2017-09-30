@@ -1,0 +1,55 @@
+
+body>div {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background-color: #fa0;
+    box-shadow: inset 0 0 100px 0 #000;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Special Elite', cursive;
+    font-size: 6em;
+    margin-bottom: 0;
+    font-weight: normal;
+    letter-spacing: -4px;
+}
+
+body>div>div {
+    font-family: Tahoma, sans-serif;
+    margin: 5% auto;
+    text-align: center;
+}
+
+input {
+    font-size: 16pt;
+    width: 80px;
+}
+
+#logo {
+    height: 100px;
+    background: url(logo.png) no-repeat center;
+}
+
+button {
+    font-size: 16pt;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #fc6;
+    border-color: #f80;
+}
+
+p {
+    text-shadow: 0 0 10px #fff;
+    line-height: 200%;
+    color: #333;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 1px dotted #000;
+}
