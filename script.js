@@ -36,6 +36,7 @@ var run = function () {
     h1.appendChild(document.createTextNode('PwGen'));
 
     textBox.setAttribute('readonly', 'readonly');
+    textBox.setAttribute('aria-label', 'password output field');
 
     var container = document.createElement('div');
     container.appendChild(body);
@@ -57,9 +58,10 @@ var run = function () {
 
     var p = document.createElement('p');
     p.innerHTML =
-        'A <a target="_blank" href="https://developers.google.com/web/progressive-web-apps">progressive web-app</a> ' +
+        'A <a target="_blank" rel="noopener" href="https://developers.google.com/web/progressive-web-apps">progressive web-app</a> ' +
         '<br>' +
-        'created by <a target="_blank" href="https://stampy.me/2017/09/password-generator-responsive-web-app/">@stampycode</a>.'
+        'created by ' +
+        '<a target="_blank" rel="noopener" href="https://stampy.me/2017/09/password-generator-responsive-web-app/">@stampycode</a>.'
     ;
 
     body.appendChild(h1);
