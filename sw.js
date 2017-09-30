@@ -1,19 +1,41 @@
-var CACHE_NAME = 'pwgen-cache';
+var CACHE_NAME = 'pwgen-cache-v1';
 var urlsToCache = [
-    '',
+    '.',
+    'sw.js',
+    'manifest.json',
     'style.css',
     'script.js',
     'logo.png',
     'logo_192.png',
+    'logo_512.png',
     'https://fonts.googleapis.com/css?family=Special+Elite'
 ];
+console.log('loading sw');
+
 self.addEventListener('install', function(event) {
     // Perform install steps
+    console.log('installing sw');
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(function(cache) {
                 console.log('Opened cache');
-                return cache.addAll(urlsToCache);
+                var x = cache.addAll(urlsToCache);
+                console.log('cache added');
+                return x;
             })
+    );
+});
+
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+                    // Cache hit - return response
+                    if (response) {
+                        return response;
+                    }
+                    return fetch(event.request);
+                }
+            )
     );
 });

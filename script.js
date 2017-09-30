@@ -1,5 +1,6 @@
 var run = function () {
     console.log('loading');
+    document.body.innerHTML = '';
     var plainDictionary = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
         symbolDictionary = plainDictionary + '!"%C2%A3$%^&*()_+-={}[]:@~;#?,./|\\',
         body = document.createElement('div'),
@@ -58,7 +59,7 @@ var run = function () {
     p.innerHTML =
         'A <a target="_blank" href="https://developers.google.com/web/progressive-web-apps">progressive web-app</a> ' +
         '<br>' +
-        'created by <a target="_blank" href="https://stampy.me/2015/12/my-password-generator/">@stampycode</a>.'
+        'created by <a target="_blank" href="https://stampy.me/2017/09/password-generator-responsive-web-app/">@stampycode</a>.'
     ;
 
     body.appendChild(h1);
@@ -98,14 +99,14 @@ var run = function () {
 
     // Service worker for Progressive Web App
     if ('serviceWorker' in navigator) {
-        window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/pwgen/sw.js').then(function(registration) {
-                // Registration was successful
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
-            }, function(err) {
-                // registration failed :(
-                console.log('ServiceWorker registration failed: ', err);
-            });
+        navigator.serviceWorker.register('sw.js', {
+            scope: '/pwgen/' // THIS IS REQUIRED FOR RUNNING A PROGRESSIVE WEB APP FROM A NON_ROOT PATH
+        }).then(function(registration) {
+            // Registration was successful
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+            // registration failed :(
+            console.log('ServiceWorker registration failed: ', err);
         });
     }
 };

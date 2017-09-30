@@ -16,10 +16,12 @@ header('Referrer-Policy: no-referrer');
   <link type="image/x-icon" rel="shortcut icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffaa00">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script lang="javascript" src="script.js" ></script>
 </head>
 <body>
+<div>Please enable JavaScript to use this app.</div>
 </body>
 </html>
