@@ -34,6 +34,8 @@ var run = function () {
     var h1 = document.createElement('h1');
     h1.appendChild(document.createTextNode('PwGen'));
 
+    textBox.setAttribute('readonly', 'readonly');
+
     var container = document.createElement('div');
     container.appendChild(body);
     document.body.appendChild(container);
@@ -107,3 +109,4 @@ var run = function () {
         });
     }
 };
+window.addEventListener('load', run);

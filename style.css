@@ -28,6 +28,7 @@ body>div>div {
 input {
     font-size: 16pt;
     width: 80px;
+    border-radius: 5px;
 }
 
 #logo {
