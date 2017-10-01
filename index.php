@@ -16,6 +16,7 @@ header('Referrer-Policy: no-referrer');
   <link type="image/x-icon" rel="shortcut icon" href="logo.png">
   <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <meta name="theme-color" content="#ffaa00">
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" type="text/css" href="style.css">

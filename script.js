@@ -48,7 +48,7 @@ var run = function () {
 
     goButton.appendChild(document.createTextNode('reveal'));
     goButton.onclick = function () {
-        textBox.style.width = '550px';
+        textBox.style.width = '300px';
         goButton.style.display = 'none';
     };
 
