@@ -18,9 +18,9 @@ header('Referrer-Policy: no-referrer');
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <meta name="theme-color" content="#ffaa00">
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script lang="javascript" src="script.js" ></script>
+  <link rel="manifest" href="manifest.json?v2">
+  <link rel="stylesheet" type="text/css" href="style.css?v2">
+  <script lang="javascript" src="script.js?v2" ></script>
 </head>
 <body>
 <div>Please enable JavaScript to use this app.</div>

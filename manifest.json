@@ -5,27 +5,27 @@
   "lang": "en-GB",
   "icons": [
     {
-      "src": "logo.png",
+      "src": "logo_256.png?v2",
       "type": "image/png",
       "sizes": "256x256"
     },
     {
-      "src": "logo_192.png",
+      "src": "logo_192.png?v2",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo_512.png",
+      "src": "logo_512.png?v2",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "./?utm_source=web_app_manifest",
+  "start_url": "./?v2&utm_source=web_app_manifest",
   "background_color": "#ffaa00",
   "theme_color": "#ffaa00",
   "display": "standalone",
   "related_applications": [{
     "platform": "web",
-    "url": "https://stampy.me/pwgen/"
+    "url": "https://stampy.me/pwgen/?v2"
   }]
 }
