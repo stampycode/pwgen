@@ -1,14 +1,14 @@
 var CACHE_NAME = 'pwgen-cache-v1';
 var urlsToCache = [
-    './?v2',
-    'sw.js?v2',
-    'manifest.json?v2',
-    'style.css?v2',
-    'script.js?v2',
-    'logo.png?v2',
-    'logo_192.png?v2',
-    'logo_256.png?v2',
-    'logo_512.png?v2',
+    './?v3',
+    'sw.js?v3',
+    'manifest.json?v3',
+    'style.css?v3',
+    'script.js?v3',
+    'logo.png?v3',
+    'logo_192.png?v3',
+    'logo_256.png?v3',
+    'logo_512.png?v3',
     'https://fonts.googleapis.com/css?family=Special+Elite'
 ];
 console.log('loading sw');
